@@ -1,16 +1,7 @@
 [package]
-name = "username-anda/sekolah-app"
+name = "sekolah-app"
 version = "0.1.0"
-description = "Aplikasi Sekolah Django"
-
-[[command]]
-name = "web"
-runner = "https://webc.org/runner/python"
-annotations = {
-  wasi = {
-    env = ["PYTHONPATH=/app"]
-  }
-}
+description = "Aplikasi Portal Sekolah"
 
 [app]
 exec = "python -m gunicorn nama_folder_project.wsgi:application --bind 0.0.0.0:$PORT"
