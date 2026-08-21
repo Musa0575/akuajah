@@ -58,8 +58,12 @@ WSGI_APPLICATION = 'sekolah_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_dd76a95b',                          # Dari 'Name' pada gambar
+        'USER': 'user_870ac2a1',                        # Dari 'Username' pada gambar
+        'PASSWORD': 'MASUKKAN_PASSWORD_ANDA_DI_SINI',    # Klik icon mata pada gambar lalu copy password-nya
+        'HOST': 'db.us-losa1.bengt.wasmernet.com',      # Dari 'Host' pada gambar
+        'PORT': '16751',                                # Dari 'Port' pada gambar
     }
 }
 
